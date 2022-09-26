@@ -5,9 +5,12 @@ class class2{
     function __construct(){
         // echo "This is abhi class constructor";
     }
-    public function __unset($name){
-        unset($this->abhi[$name]);
+    public function __toString(){
+        return get_class($this);
     }
+    // public function __unset($name){
+    //     unset($this->abhi[$name]);
+    // }
     // public static function mainThing(){
     //     echo "This is the static function in the class";
     // }

@@ -11,5 +11,6 @@
     // class2::mainThing();
     // $obj->ab;
     // unset($obj->ab);
-    $obj->ab;
+    // $obj->ab;
+    echo $obj;
 ?>
