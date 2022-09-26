@@ -5,8 +5,12 @@ class class2{
     function __construct(){
         // echo "This is abhi class constructor";
     }
-    public function __toString(){
-        return get_class($this);
+    // public function __toString(){
+    //     return get_class($this);
+    // }
+    public function __invoke($param,$param2){
+        echo 'Param 1 is the '.$param;
+        echo '<br>Param 2 is the '.$param2;
     }
     // public function __unset($name){
     //     unset($this->abhi[$name]);

@@ -12,5 +12,8 @@
     // $obj->ab;
     // unset($obj->ab);
     // $obj->ab;
-    echo $obj;
+    // echo $obj;
+
+    // This called the __invoke in the class
+    echo $obj('abhi','abhishek');
 ?>
