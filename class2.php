@@ -17,6 +17,10 @@ class class2{
         echo 'Trying to access the '.$name .' function';
         print_r($array);
     }
+    public function abhishek($name){
+        echo 'Trying to access the abhi function in the class ';
+        echo $name;
+    }
    
 }
 

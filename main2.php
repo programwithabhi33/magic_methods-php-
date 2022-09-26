@@ -6,5 +6,7 @@
     // $obj->ab = "Abhishek";
     // $obj->ab;
     $obj->abhi('2','3','4');
+    echo "<br>";
+    $obj->abhishek('abhishek');
 
 ?>
