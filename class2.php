@@ -4,6 +4,9 @@ class class2{
     function __construct(){
         // echo "This is abhi class constructor";
     }
+    // public static function mainThing(){
+    //     echo "This is the static function in the class";
+    // }
     public function __get($name){
         echo 'This is the get method in the class2 :'.$this->abhi[$name];
     }
@@ -14,6 +17,12 @@ class class2{
 
     // The call function called when the object trying to access the undefined function into the classs first argument is the function name it has been called and the second is the its function arguments
     public function __call($name,$array){
+        echo 'Trying to access the '.$name .' function';
+        print_r($array);
+    }
+
+    // The callstatic function is used for the class when undefined function are called is as same as __call
+    public static function __callstatic($name,$array){
         echo 'Trying to access the '.$name .' function';
         print_r($array);
     }

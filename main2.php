@@ -5,8 +5,10 @@
     $obj = new class2();
     // $obj->ab = "Abhishek";
     // $obj->ab;
-    $obj->abhi('2','3','4');
-    echo "<br>";
-    $obj->abhishek('abhishek');
+    // $obj->abhi('2','3','4');
+    // echo "<br>";
+    // $obj->abhishek('abhishek');
+    class2::mainThing();
+    $obj->mainThing();
 
 ?>
