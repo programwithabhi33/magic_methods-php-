@@ -8,8 +8,14 @@ class class2{
         echo 'This is the get method in the class2 :'.$this->abhi[$name];
     }
     public function __set($name,$value){
-        // $this->$abhi[$name] = $value;
-        return $this->abhi[$name] = $value;
+        // This is how you can assign the value in the array key
+        // return $this->abhi[$name] = $value;
+    }
+
+    // The call function called when the object trying to access the undefined function into the classs first argument is the function name it has been called and the second is the its function arguments
+    public function __call($name,$array){
+        echo 'Trying to access the '.$name .' function';
+        print_r($array);
     }
    
 }
