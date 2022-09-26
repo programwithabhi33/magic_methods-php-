@@ -1,11 +1,11 @@
 <?php
 
-    function __autoload($className){
-        include_once "./classes/$className.php";
+    // function spl_autoload_register($className){
+        include_once "./classes/Main.php";
 
-    }
+    // }
 
-     $main = new Abhi();
+    //  $main = new Abhi();
      echo "<br>";
      $thing = new Main();
 
