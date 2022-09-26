@@ -8,7 +8,8 @@
     // $obj->abhi('2','3','4');
     // echo "<br>";
     // $obj->abhishek('abhishek');
-    class2::mainThing();
-    $obj->mainThing();
-
+    // class2::mainThing();
+    // $obj->ab;
+    // unset($obj->ab);
+    $obj->ab;
 ?>
