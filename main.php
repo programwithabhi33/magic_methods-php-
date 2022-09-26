@@ -9,7 +9,8 @@ include './classes/Abhi.php';
 
 $obj = new Abhi();
 
-echo $obj->abhi;
+$obj->abhi = "Value changed of the abhi";
+$obj->abhi ;
 
 
 ?>   
