@@ -8,25 +8,27 @@ class class2{
     // public function __toString(){
     //     return get_class($this);
     // }
-    public function __invoke($param,$param2){
-        echo 'Param 1 is the '.$param;
-        echo '<br>Param 2 is the '.$param2;
-    }
+
+    // The __invoke method used to when you treat a object as a function 
+    // public function __invoke($param,$param2){
+    //     echo 'Param 1 is the '.$param;
+    //     echo '<br>Param 2 is the '.$param2;
+    // }
     // public function __unset($name){
     //     unset($this->abhi[$name]);
     // }
     // public static function mainThing(){
     //     echo "This is the static function in the class";
     // }
-    public function __get($name){
-        if(array_key_exists($name,$this->abhi)){
-            echo $this->abhi[$name];
-        }
-        else{
-            echo 'This is non-exist variable in the array';
+    // public function __get($name){
+    //     if(array_key_exists($name,$this->abhi)){
+    //         echo $this->abhi[$name];
+    //     }
+    //     else{
+    //         echo 'This is non-exist variable in the array';
 
-        }
-    }
+    //     }
+    // }
     // public function __set($name,$value){
     //     // This is how you can assign the value in the array key
     //     // return $this->abhi[$name] = $value;
@@ -43,12 +45,14 @@ class class2{
     //     echo 'Trying to access the '.$name .' function';
     //     print_r($array);
     // }
-    public function abhishek($name){
-        echo 'Trying to access the abhi function in the class ';
-        echo $name; 
-    }
+    // public function abhishek($name){
+    //     echo 'Trying to access the abhi function in the class ';
+    //     echo $name; 
+    // }
+
+    // __isset is called when you call the isset function in the object
     public function __isset($name){ 
-        echo "This is the isset function in the class";
+        // echo $this->$name;
     }
 }
 

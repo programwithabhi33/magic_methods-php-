@@ -15,5 +15,6 @@
     // echo $obj;
 
     // This called the __invoke in the class
-    echo $obj('abhi','abhishek');
+    // echo $obj('abhi','abhishek');
+    echo var_dump(isset($obj->main));
 ?>
